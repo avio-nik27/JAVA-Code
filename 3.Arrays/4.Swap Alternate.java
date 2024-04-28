@@ -26,6 +26,34 @@ Sample Output 2 :
 2 1 4 3 
  */
 
+ // MAIN CODE
+
+ import java.util.Scanner;
+public class Runner {
+
+    public static void main(String[] args)  {
+        Scanner sr = new Scanner(System.in);
+        int t = sr.nextInt();
+        while(t > 0) 
+        {
+            int n=sr.nextInt();
+            int[] arr=new int[n];
+            for (int i =0 ; i<n;i++)
+            {
+                arr[i]=sr.nextInt();
+            }
+            Solution.swapAlternate(arr);
+            for(int i=0;i<n;i++)
+            {
+                System.out.print(arr[i]+" ");
+            }
+            System.out.println();
+            t -= 1;
+        }
+    }
+}
+
+
  // CODE
 
  /*import java.util.*;*/

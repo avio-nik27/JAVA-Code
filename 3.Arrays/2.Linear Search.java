@@ -33,6 +33,30 @@ Sample Output 2:
 
  */
 
+
+ // MAIN CODE
+
+ import java.util.Scanner;
+public class Runner {
+
+    public static void main(String[] args)  {
+        Scanner sr = new Scanner(System.in);
+        int t = sr.nextInt();
+        while(t > 0) 
+        {
+            int size = sr.nextInt();
+            int[] input = new int[size];
+            for (int i = 0; i < size; ++i) 
+            {
+                input[i] = sr.nextInt();
+            }
+            int val = sr.nextInt();
+            System.out.println(Solution.linearSearch(input,val));
+            t -= 1;
+        }
+    }
+}
+
 // CODE
 
 
